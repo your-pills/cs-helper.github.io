@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cs info</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/windows-style.css">
+</head>
+<body>
+    <header class="header">
+       <nav class="nav-container">
+           <div class="logo">cs-Helper</div>
+           <div class="nav-wrapper">
+               <ul class="nav">
+                   <li class="nav__item">
+                       <a href="./index.html" id="windows" class="nav__link">windows</a>
+                   </li>
+                   <li class="nav__item">
+                       <a href="./clean.html" class="nav__link">clean</a>
+                   </li>
+                   <li class="nav__item">
+                        <a href="./csgo.html" class="nav__link">cs-go</a>
+                   </li>
+               </ul>
+           </div>
+           <div id="menu-toggle" class="menu-icon">
+               <div class="menu-icon-line"></div>
+           </div>
+           <div id="mobile-nav" class="mobile-nav">
+            <ul class="mobile-nav__list">
+                <li class="mobile-nav__item">
+                    <a href="./index.html" id="windows-mobile" class="mobile-nav__link">windows</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="./clean.html" class="mobile-nav__link">clean</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="./csgo.html" class="mobile-nav__link">cs-go</a>
+                </li>
+            </ul>
+           </div>
+       </nav>
+    </header>
+    <div class="content">
+        <div class="container">
+            <div class="one">
+                <h2 class="mouse-windows-h">Настройка мыши</h2>
+                <p class="mouse-windows">Прежде чем выполнять дальнейшую настройку пк и игры, нужно убедиться в том, что в системе стоят стандартные настройки и отключено ускорение мыши. Для этого заходим в Параметры >> Устройства >> Мышь >> Доп. параметры мыши и ставим скорость указателя на 6 единиц, а также отключаем *повышенную точность указателя*, чтобы отключить ускорение.</p>
+                <p class="images"><img src="/img/mouse-settings.png" alt="" class="mouse-windows-img"></p>
+            </div>
+            <div class="two">
+                <h2 class="mouse-windows-h">Настройка dpi</h2>
+                <p class="mouse-windows">
+                    Для начала введём один термин - eDPI. Это значение DPI вашей мыши умноженный на значение чувствительности мыши в игре. Если у меня стоит 2.5 в игре и 400 DPI на мышке, значит мой eDPI = 1000.
+                    <BR>
+                    <h3>eDPI = DPI * sens</h3>
+                    Почему стоит ставить 400 DPI на мышке? При такой чувствительности мышь имеет высочайшую точность и минимальные отклонения, которые практически невозможно заметить до достижения определенного eDPI. (eDPI ~< 1800). Если ваш eDPI выше этого значения, то стоит переключиться на DPI 800 или 1600. Выше ставить не стоит ибо не каждая мышка будет вести себя ожидаемо. Та же разница по отклику между 400 и 1600 DPI при одинаковых значениях eDPI заметна в плавности и отклике. Пропуск пикселей не стоит брать во внимание, ибо даже 400 DPI хватает для комфортного прицеливания топовых игроков. Однако при повышении DPI значения сглаживаются и появляется, хоть и незначительная, но задержка ввода, что негативно влияет на точную стрельбу, чего нет при низком значении.
+                </p>
+            </div>
+            <div class="three">
+                <h2 class="windows-optimization-h">Небольшая оптимизация системы</h2>
+                <p class="windows-optimization">
+                    Проведем самую основную настройку - включим режим высокой производительности в режиме питания
+                    <p class="images"><img src="./img/power-settings.jpg" class="power" alt=""></p>
+                    Теперь, если вы владельцы видеокарты Nvidia, зайдем в панель управления и поставим в *регулировке настроек изображения* пользовательские настройки с упором на производительность.
+                    <p class="images"><img src="./img/nvidia-settings.png" class="nvidia" alt=""></p>
+                    Также в системе можно отключить некоторые анимации и ненужные функции - сделаем это! По <a href="https://1gai.ru/baza-znaniy/laifak/524744-kak-uskorit-windows-10-otkljuchaem-animaciju.html" class="link">этой</a> ссылке можно посмотреть все шаги как отключить анимации и ненужные эффекты.
+                    <br>
+                    Также стоит отключить гибернацию с помощью команды <h5 class="green">powercfg -h off</h5> и консоли, запущенной с правами администратора.
+                    <br>
+                    Настройки 3D в панели Nvidia стоит выставить так, как показано на картинках ниже. Однако на некоторых видеокартах может не быть определенных пунктов. Их просто пропускаем
+                    <p class="images"><img src="./img/3d-1.jpg" class="d-img" alt=""></p>
+                    <p class="images"><img src="./img/3d-2.jpg" class="d-img" alt=""></p>
+                    <p class="images"><img src="./img/3d-3.jpg" class="d-img" alt=""></p>
+                    <p class="images"><img src="./img/3d-4.jpg" class="d-img" alt=""></p>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <script src="/main.js"></script>
+</body>
+</html>

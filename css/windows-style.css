@@ -1,0 +1,31 @@
+.content {
+    height: 100vh;
+    background-color: black;
+}
+.container {
+    font-size: 14px;
+   margin: 20px auto;
+   padding-top: 1px;
+   padding-left: 30px;
+   padding-bottom: 50px;
+   max-width: 1150px;
+   padding-right: 30px;
+ color: white;
+ background-color: rgba(255, 255, 255, 0.055);
+}
+#windows{
+    color: white;
+}
+#windows-mobile{
+    color: white;
+}
+
+.link {
+    color: red;
+}
+.green {
+    color: green;
+}
+.mouse-windows-img{
+    width: 50%;
+}

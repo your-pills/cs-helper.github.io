@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cs info</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/csgo-style.css">
+</head>
+<body>
+    <header class="header">
+       <nav class="nav-container">
+           <div class="logo">cs-Helper</div>
+           <div class="nav-wrapper">
+               <ul class="nav">
+                   <li class="nav__item">
+                       <a href="./index.html" id="windows" class="nav__link">windows</a>
+                   </li>
+                   <li class="nav__item">
+                       <a href="./clean.html" id="clean" class="nav__link">clean</a>
+                   </li>
+                   <li class="nav__item">
+                        <a href="./csgo.html" class="nav__link" id="csgo">cs-go</a>
+                   </li>
+               </ul>
+           </div>
+           <div id="menu-toggle" class="menu-icon">
+               <div class="menu-icon-line"></div>
+           </div>
+           <div id="mobile-nav" class="mobile-nav">
+            <ul class="mobile-nav__list">
+                <li class="mobile-nav__item">
+                    <a href="./index.html" id="windows-mobile" class="mobile-nav__link">windows</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="./clean.html" id="clean-mobile" class="mobile-nav__link">clean</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="./csgo.html" class="mobile-nav__link" id="csgo">cs-go</a>
+                </li>
+            </ul>
+           </div>
+       </nav>
+    </header>
+    <div class="content">
+        <div class="container">
+            <h2>
+                Параметры запуска
+            </h2>
+            <p>В сети можно найти много разных параметров запуска, однако мы сконцентрируемся на самых полезных
+                <h5 class="green">-high +mat_hdr_level 0 -noaafonts -noipx -console -novid -nojoy -language english -nosync</h5>
+                Разберем что делает каждый из них:
+                <h5 class="green">-high</h5> - запускает игру с высоким приоритетом процесса
+                <h5 class="green">+mat_hdr_level 0</h5> - выключает HDR в игре
+                <h5 class="green">-noaafonts </h5> - отключает сглаживание шрифтов в игре
+                <h5 class="green">-noipx</h5> - отключает протокол LAN
+                <h5 class="green">-console</h5> - включает внутриигровую консоль
+                <h5 class="green">-novid</h5> - удаляет вступительное видео Valve
+                <h5 class="green">-nojoy</h5> - отключает поддержку джойстиков
+                <h5 class="green">-language english</h5> - переключает игру на английский язык, на нем повышается читаемость стоковых шрифтов
+                <h5 class="green">-nosync</h5> - принудительно отключает вертикальную синхронизацию
+            </p>
+            <h2>
+                Настройки графики
+            </h2>
+            <p>
+                Несомненно, в игре мелкие частицы и прочий мусор нам не нужны, однако есть два параметра, которые желательно оставить высокими, и сейчас расскажу почему. Молотов и дым имеют полупрозрачную структуру, через которую на настройках ниже гораздо лучше видно. Остальные настройки можно смело подгонять под себя или ставить минимальные. 
+                <p class="images"><img src="./img/shader-set.png" class="cs-img" alt=""></p>
+                <p class="images"><img src="./img/shader-1.png" class="cs-img" alt=""></p>
+                <p class="images"><img src="./img/shader-2.png" class="cs-img" alt=""></p>
+            </p>
+            <h3>
+                Config Generator
+            </h3>
+            <p>
+                Также на карте Config Generator от crashz есть функция fps boost, которая дает еще небольшой прирост к фпс в игре. Также советуем сделать эту манипуляцию, после чего перезагрузить игру.
+                <p class="images"><img src="./img/fps-boost.png" class="cs-img" alt=""></p>
+            </p>
+            <h2>Результаты до и после оптимизации компьютера</h2>
+            <p class="images"><img src="./img/fps-before.png" class="cs-img" alt=""></p>
+            <p class="images"><img src="./img/fps-after.png" class="cs-img" alt=""></p>
+        </div>
+
+    </div>
+    <script src="/main.js"></script>
+</body>
+</html>

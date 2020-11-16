@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cs info</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/clean-style.css">
+</head>
+<body>
+    <header class="header">
+       <nav class="nav-container">
+           <div class="logo">cs-Helper</div>
+           <div class="nav-wrapper">
+               <ul class="nav">
+                   <li class="nav__item">
+                       <a href="./index.html" id="windows" class="nav__link">windows</a>
+                   </li>
+                   <li class="nav__item">
+                       <a href="./clean.html" id="clean" class="nav__link">clean</a>
+                   </li>
+                   <li class="nav__item">
+                        <a href="./csgo.html" class="nav__link">cs-go</a>
+                   </li>
+               </ul>
+           </div>
+           <div id="menu-toggle" class="menu-icon">
+               <div class="menu-icon-line"></div>
+           </div>
+           <div id="mobile-nav" class="mobile-nav">
+            <ul class="mobile-nav__list">
+                <li class="mobile-nav__item">
+                    <a href="./index.html" id="windows-mobile" class="mobile-nav__link">windows</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="./clean.html" id="clean-mobile" class="mobile-nav__link">clean</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="./csgo.html" class="mobile-nav__link">cs-go</a>
+                </li>
+            </ul>
+           </div>
+       </nav>
+    </header>
+    <div class="content">
+        <div class="container">
+            <h2>
+                Очистка Windows
+            </h2>
+            <p>Существует много программ для очистки диска но мы остановимся на основных моментах очистки, которых вполне хватит для наших целей.Для начала можно вручную, через диспетчер задач, почистить программы в автозагрузке чтобы исключить утечку оперативной памяти на программы, которые сейчас и в фоне системы нам не нужны. Также с помощью встроенной утилиты можно удалить старые версии системы и прочий мусор
+            <p class="images"><img src="./img/clean-disc.jpg" class="disc" alt=""></p>
+            С помощью программы <a href="https://www.ccleaner.com/ru-ru" class="link">Ccleaner</a> можно удалить ненужный кеш браузера и системы а также почистить реестр, что мне лично не раз убирало фризы и большую задержку в игре. Также есть универсальная <a href="https://win10tweaker.pro/" class="link">программа</a> которая может также почистить вашу систему и заодно отключить кучу ненужных вам функций для рекламы и слежки в системе.
+            <p class="images"><img src="./img/ccleaner.png" class="ccleaner" alt=""></p>
+            <p class="images"><img src="./img/Win-10-Tweaker.png" class="tweaker-img" alt=""></p>
+            <h3>Windows Defender</h3>
+            Антивирус, конечно, важная вещь, но мы гонимся за производительностью, поэтому по <a href="https://www.tenforums.com/tutorials/110230-enable-disable-windows-security-windows-10-a.html" class="link">этой</a> ссылке мы можем его отключить. 
+            </p>
+            <h3>Отключаем DVR</h3>
+            <p>Игровой оверлей от windows (XBox) выполняет примерно ту же функцию, что и nvidia shadow play, только значительно нагружает систему. Чтобы его отключить нужно скачать <a href="https://vk.com/doc289590421_572012823?hash=369cfd7e8df1c6c821&dl=b8f0975bebe398d41f" class="link">этот</a> файл, переименовать расширение в .reg и запустить. Таким образом мы получим прирост производительности и отключим оверлей.</p>
+            <h3>Включаем режим боевого трансформера</h3>
+            <p>С помощью команды <h5 class="green">powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61</h5>включаем режим максимальной производительности в режимах электропитания. Для этого зайдите в поиск системы, найдите powerShell, запустите правой кнопкой мыши от имени администратора, напишите команду и нажмите Enter. Теперь включен режим максимальной производительности</p>
+            <p class="images"><img src="./img/powershell.png" class="powershell" alt=""></p>
+        </div>
+
+    </div>
+    <script src="/main.js"></script>
+</body>
+</html>
